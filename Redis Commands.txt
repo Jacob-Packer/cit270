@@ -1,0 +1,9 @@
+Redis Commands:
+redis-cli
+
+keys * = all table names
+hget users [username: dduck@quackers.com] = [password: H@2py]
+hkeys users = lists all users
+hset [table name: hashedpasswords] [username] [hashedpassword] = adds the [hashedpassword] to the [username] table
+del users = deletes all users
+hdel users ryan = deletes specifically the user ryan
