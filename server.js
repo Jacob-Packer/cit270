@@ -22,6 +22,7 @@ https.createServer({
   // key: fs.readFileSync('server.key'), This is an old part, we used to use our own certificate
   // cert: fs.readFileSync('server.cert')
 }, app).listen(3000, () => {
+  redisclient.connect();
   console.log('Listening...')
 })
 
