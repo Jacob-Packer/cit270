@@ -17,7 +17,7 @@ const fs = require('fs')
 https.createServer({
   key: fs.readFileSync('/etc/letsencrypt/archive/jacobpacker.cit270.com/privkey1.pem'), // THis is a private key
   cert: fs.readFileSync('/etc/letsencrypt/archive/jacobpacker.cit270.com/cert1.pem'),
-  chain: fs.readFileSync('/etc/letsencrypt/archive/jacobpacker.cit270.com/fullchain1.pem') // This is a self-signed certificate
+  ca: fs.readFileSync('/etc/letsencrypt/archive/jacobpacker.cit270.com/chain1.pem') // This is a self-signed certificate
 
   // key: fs.readFileSync('server.key'), This is an old part, we used to use our own certificate
   // cert: fs.readFileSync('server.cert')
