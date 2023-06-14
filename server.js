@@ -24,12 +24,15 @@ https.createServer({
 }, app).listen(port, () => {
   redisclient.connect();
   console.log('Listening...')
+  console.log('Running...')
+
 })
 
 
 
 app.get('/', (req, res) => {
-    res.send('Hello HTTPS!')
+    // res.send('Hello user!')
+    res.send(`<button onclick="window.location.href='https://jacob-packer.github.io/wdd130/week-1/index.html';">Jacob Packer</button>`)
   })
   
 //   https.createServer({}, app).listen(3000, () => {
