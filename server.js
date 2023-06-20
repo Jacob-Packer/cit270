@@ -35,7 +35,6 @@ app.get('/', (req, res) => {
     res.send(`
     <head><link rel="icon" type="image/x-icon" href="https://images.emojiterra.com/google/android-12l/512px/1f609.png"></head>
     <button onclick="window.location.href='https://jacob-packer.github.io/wdd130/week-1/index.html';">Jacob Packer</button>
-    
     `)
   })
   
