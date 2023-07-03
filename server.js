@@ -10,7 +10,7 @@ const redis = require("redis")
 const app = express();
 console.log("Prepare yourself for NoDEMON!!")
 const port = 3000;
-const redisclient = redis.createClient({url:"redis://default:Passw0rd@redis-stedi-jacob:6379"});
+const redisclient = redis.createClient({url:"redis://default:redis-stedi-jacob:6379"});
 const fs = require('fs')
 
 
@@ -27,7 +27,6 @@ app.listen(port, () => {
   redisclient.connect();
   console.log('Listening...')
   console.log('Running...')
-
 })
 
 
